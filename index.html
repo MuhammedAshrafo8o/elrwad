@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة إلكتروميك للمقاولات الكهربائية والميكانيكية | المملكة العربية السعودية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0a3877; /* Saudi blue */
+            --secondary: #245e37; /* Saudi green */
+            --gold: #d4af37;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            color: var(--dark);
+            line-height: 1.8;
+            text-align: right;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a56a5 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: var(--gold);
+        }
+        
+        .gold-bg {
+            background-color: var(--gold);
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .contact-form {
+            direction: rtl;
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            text-align: right;
+            padding-right: 15px;
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .tech-icon:hover {
+            transform: scale(1.1);
+            color: var(--gold);
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-[var(--primary)]">إلكترو<span class="text-[var(--secondary)]">ميك</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-[var(--primary)] hover:text-[var(--secondary)] px-3 py-2 text-sm font-medium">الرئيسية</a>
+                    <a href="#services" class="text-gray-500 hover:text-[var(--primary)] px-3 py-2 text-sm font-medium">خدماتنا</a>
+                    <a href="#fire-protection" class="text-gray-500 hover:text-[var(--primary)] px-3 py-2 text-sm font-medium">الحماية من الحريق</a>
+                    <a href="#smart-building" class="text-gray-500 hover:text-[var(--primary)] px-3 py-2 text-sm font-medium">المباني الذكية</a>
+                    <a href="#sustainability" class="text-gray-500 hover:text-[var(--primary)] px-3 py-2 text-sm font-medium">الاستدامة</a>
+                    <a href="#experience" class="text-gray-500 hover:text-[var(--primary)] px-3 py-2 text-sm font-medium">خبراتنا</a>
+                    <a href="#projects" class="text-gray-500 hover:text-[var(--primary)] px-3 py-2 text-sm font-medium">مشاريعنا</a>
+                    <a href="#careers" class="text-gray-500 hover:text-[var(--primary)] px-3 py-2 text-sm font-medium">الوظائف</a>
+                    <a href="#contact" class="bg-[var(--primary)] text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-[var(--secondary)] transition duration-300">اتصل بنا</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[var(--primary)]">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--primary)] hover:text-[var(--secondary)] hover:bg-gray-50">الرئيسية</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-[var(--primary)] hover:bg-gray-50">خدماتنا</a>
+                <a href="#fire-protection" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-[var(--primary)] hover:bg-gray-50">الحماية من الحريق</a>
+                <a href="#smart-building" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-[var(--primary)] hover:bg-gray-50">المباني الذكية</a>
+                <a href="#sustainability" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-[var(--primary)] hover:bg-gray-50">الاستدامة</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-[var(--primary)] hover:bg-gray-50">خبراتنا</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-[var(--primary)] hover:bg-gray-50">مشاريعنا</a>
+                <a href="#careers" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-[var(--primary)] hover:bg-gray-50">الوظائف</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium bg-[var(--primary)] text-white hover:bg-[var(--secondary)]">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">الخبرة في الأنظمة الكهربائية والميكانيكية منذ 2003</h1>
+                    <p class="text-xl mb-8 text-blue-100">أكثر من 20 عاماً من الخبرة المتخصصة في أنظمة الـ MEP نقدم حلولاً مبتكرة للمشاريع التجارية والصناعية والمؤسسية في المملكة العربية السعودية</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-white text-[var(--primary)] px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-300 flex items-center">
+                            <i class="fas fa-phone-volume ml-2"></i>
+                            اطلب عرض سعر
+                        </a>
+                        <a href="#services" class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-[var(--primary)] transition duration-300 flex items-center">
+                            <i class="fas fa-cogs ml-2"></i>
+                            خدماتنا المتكاملة
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 shadow-2xl">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b3aaf0f4-f472-4fc0-95ec-5e3e9da4944a.png" alt="المهندسون السعوديون يعملون على أنظمة التكييف في مشروع ضخم في الرياض مع تصميم معماري حديث" class="rounded-lg w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-[var(--gold)] rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"></div>
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-[var(--primary)] rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float animation-delay-2000"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-16 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[var(--primary)]">إنجازاتنا في المملكة</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-600">شركتك الموثوقة للمقاولات الكهربائية والميكانيكية في جميع أنحاء السعودية</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 border-l md:border-l-0 border-r border-gray-200">
+                    <span class="text-4xl font-bold text-[var(--primary)]">20+</span>
+                    <p class="mt-2 text-gray-600">سنوات خبرة</p>
+                </div>
+                <div class="p-6 border-l md:border-l-0 border-r border-gray-200">
+                    <span class="text-4xl font-bold text-[var(--primary)]">150+</span>
+                    <p class="mt-2 text-gray-600">مشروع في السعودية</p>
+                </div>
+                <div class="p-6 border-l md:border-l-0 border-r border-gray-200">
+                    <span class="text-4xl font-bold text-[var(--primary)]">95%</span>
+                    <p class="mt-2 text-gray-600">رضا العملاء</p>
+                </div>
+                <div class="p-6">
+                    <span class="text-4xl font-bold text-[var(--primary)]">5</span>
+                    <p class="mt-2 text-gray-600">فروع بالمملكة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[var(--gold)] font-medium">اختصاصاتنا</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-[var(--primary)]">حلول متكاملة للأنظمة الكهربائية والميكانيكية</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-600">نقدم خدمات شاملة مع التركيز على الابتكار والكفاءة والاستدامة وفقاً لمعايير المملكة العربية السعودية</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl border-t-4 border-[var(--gold)]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e0ec0115-1e5e-46a8-9426-aefec3d1c6da.png" alt="نظام تكييف مركزي حديث في مبنى تجاري بالرياض مع فنيين سعوديين يقومون بالصيانة" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-[var(--primary)] p-2 rounded-lg text-white">
+                                <i class="fas fa-snowflake text-lg"></i>
+                            </div>
+                            <h3 class="mr-3 text-xl font-semibold text-[var(--primary)]">أنظمة التكييف والتهوية</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">تصميم وتركيب وصيانة أنظمة التكييف والتهوية والتسخين (HVAC) للحصول على التحكم المثالي في المناخ الداخلي للمباني، مع التركيز على حلول موفرة للطاقة تناسب مناخ المملكة الحار.</p>
+                        <ul class="list-disc pr-5 text-gray-600 mb-4">
+                            <li>أنظمة VRV/VRF الموفرة للطاقة</li>
+                            <li>أنظمة التكييف المركزي للمباني الضخمة</li>
+                            <li>حلول التهوية الميكانيكية للمستشفيات</li>
+                            <li>أنظمة معالجة الهواء (AHU)</li>
+                            <li>أنظمة إدارة المباني (BMS)</li>
+                        </ul>
+                        <a href="#contact" class="mt-4 inline-flex items-center text-[var(--primary)] hover:text-[var(--secondary)] font-medium">
+                            إطلب استشارة مجانية
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl border-t-4 border-[var(--gold)]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/24680c0e-66bb-432e-99c3-4ab8a7cfe43d.png" alt="فني كهرباء سعودي يعمل على لوحة كهرباء رئيسية في مشروع صناعي بجدة" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-[var(--primary)] p-2 rounded-lg text-white">
+                                <i class="fas fa-bolt text-lg"></i>
+                            </div>
+                            <h3 class="mr-3 text-xl font-semibold text-[var(--primary)]">الأنظمة الكهربائية</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">حلول كهربائية كاملة بما في ذلك توزيع الطاقة، أنظمة الإضاءة، الطاقة الاحتياطية، وإدارة الطاقة وفقاً للوائح السعودية للسلامة الكهربائية.</p>
+                        <ul class="list-disc pr-5 text-gray-600 mb-4">
+                            <li>لوحات توزيع رئيسية وفرعية</li>
+                            <li>أنظمة الإضاءة الذكية LED</li>
+                            <li>أنظمة الطاقة الاحتياطية (UPS & Generators)</li>
+                            <li>أنظمة التأريض والحماية من الصواعق</li>
+                            <li>أنظمة التيار الخفيف والشبكات</li>
+                        </ul>
+                        <a href="#contact" class="mt-4 inline-flex items-center text-[var(--primary)] hover:text-[var(--secondary)] font-medium">
+                            إطلب استشارة مجانية
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl border-t-4 border-[var(--gold)]">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8d29f1e8-a405-4a23-874a-580109b9829e.png" alt="أنظمة سباكة حديثة في مشروع سكني بالدمام مع تقنيات الحفاظ على المياه" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-[var(--primary)] p-2 rounded-lg text-white">
+                                <i class="fas fa-faucet text-lg"></i>
+                            </div>
+                            <h3 class="mr-3 text-xl font-semibold text-[var(--primary)]">أنظمة السباكة</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">حلول سباكة متقدمة بما في ذلك إمدادات المياه، الصرف الصحي، وأنظمة الحفاظ على المياه المستدامة المناسبة للمناطق الجافة في المملكة.</p>
+                        <ul class="list-disc pr-5 text-gray-600 mb-4">
+                            <li>أنظمة إمداد المياه والتوزيع</li>
+                            <li>أنظمة الصرف الصحي المعالجة</li>
+                            <li>أنظمة إعادة تدوير المياه الرمادية</li>
+                            <li>أنظمة مواسير CPVC وPPR</li>
+                            <li>أنظمة الغازات الطبية للمستشفيات</li>
+                        </ul>
+                        <a href="#contact" class="mt-4 inline-flex items-center text-[var(--primary)] hover:text-[var(--secondary)] font-medium">
+                            إطلب استشارة مجانية
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fire Protection Section -->
+    <section id="fire-protection" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[var(--gold)] font-medium">الحماية والسلامة</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-[var(--primary)]">أنظمة الحماية من الحريق المتقدمة</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-600">نوفر حلول شاملة للحماية من الحريق وفقاً لمعايير الدفاع المدني السعودي ومعايير NFPA العالمية</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-[var(--primary)] mb-6">أنظمة الكشف والإنذار</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-3 rounded-lg text-red-600 mr-4">
+                                <i class="fas fa-fire-extinguisher"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">أنظمة الكشف المبكر</h4>
+                                <p class="text-gray-600">كاشفات الدخان والحرارة المتقدمة مع أنظمة العنونة الذكية للكشف السريع والدقيق</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-3 rounded-lg text-red-600 mr-4">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">أنظمة الإنذار والإخلاء</h4>
+                                <p class="text-gray-600">أنظمة صوتية ومرئية للإنذار مع إضاءة الطوارئ وعلامات الخروج الآمن</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-3 rounded-lg text-red-600 mr-4">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">أنظمة الإطفاء التلقائي</h4>
+                                <p class="text-gray-600">أنظمة الرش التلقائي (Sprinkler) وأنظمة الغازات النظيفة FM200 و NOVEC 1230</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="نظام حماية من الحريق في مبنى حديث" class="rounded-xl shadow-lg w-full h-auto">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl"></div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-gray-50 p-6 rounded-xl text-center">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">معتمد من الدفاع المدني</h4>
+                    <p class="text-gray-600">جميع أنظمتنا معتمدة ومطابقة لمتطلبات الدفاع المدني السعودي</p>
+                </div>
+                
+                <div class="feature-card bg-gray-50 p-6 rounded-xl text-center">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">صيانة دورية</h4>
+                    <p class="text-gray-600">برامج صيانة شاملة لضمان الأداء الأمثل لأنظمة الحماية</p>
+                </div>
+                
+                <div class="feature-card bg-gray-50 p-6 rounded-xl text-center">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">استجابة سريعة</h4>
+                    <p class="text-gray-600">فريق طوارئ متاح 24/7 للاستجابة السريعة لأي مشاكل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Building Section -->
+    <section id="smart-building" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[var(--gold)] font-medium">التقنيات المتقدمة</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-[var(--primary)]">المباني الذكية وتقنيات BIM</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-600">نستخدم أحدث التقنيات لتصميم وإدارة المباني الذكية مع تطبيق نمذجة معلومات البناء (BIM)</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="نظام إدارة المباني الذكية" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-[var(--primary)] mb-6">أنظمة إدارة المباني الذكية</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg text-blue-600 mr-4">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">التحكم الذكي المتكامل</h4>
+                                <p class="text-gray-600">نظام موحد للتحكم في الإضاءة والتكييف والأمان وإدارة الطاقة</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg text-blue-600 mr-4">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">مراقبة الأداء والتحليلات</h4>
+                                <p class="text-gray-600">تحليل البيانات في الوقت الفعلي لتحسين الكفاءة وتقليل التكاليف</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg text-blue-600 mr-4">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">التحكم عن بُعد</h4>
+                                <p class="text-gray-600">إمكانية المراقبة والتحكم من خلال التطبيقات الذكية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-[var(--primary)] mb-8 text-center">تقنيات BIM المتقدمة</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="tech-icon text-4xl text-[var(--primary)] mb-4">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">النمذجة ثلاثية الأبعاد</h4>
+                        <p class="text-gray-600 text-sm">تصميم دقيق ومفصل لجميع أنظمة MEP</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="tech-icon text-4xl text-[var(--primary)] mb-4">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">كشف التعارضات</h4>
+                        <p class="text-gray-600 text-sm">تجنب المشاكل قبل التنفيذ</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="tech-icon text-4xl text-[var(--primary)] mb-4">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">التنسيق المتكامل</h4>
+                        <p class="text-gray-600 text-sm">تعاون فعال بين جميع التخصصات</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="tech-icon text-4xl text-[var(--primary)] mb-4">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">إدارة دورة الحياة</h4>
+                        <p class="text-gray-600 text-sm">من التصميم إلى الصيانة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="py-20 bg-[var(--secondary)] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[var(--gold)] font-medium">الاستدامة والبيئة</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">حلول صديقة للبيئة وموفرة للطاقة</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-green-100">نلتزم بتطبيق أفضل الممارسات البيئية ودعم رؤية السعودية 2030 للاستدامة</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">المباني الخضراء والشهادات البيئية</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-lg text-green-600 mr-4">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">شهادة LEED</h4>
+                                <p class="text-green-100">تصميم وتنفيذ مشاريع معتمدة من نظام LEED للمباني الخضراء</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-lg text-green-600 mr-4">
+                                <i class="fas fa-solar-panel"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">الطاقة المتجددة</h4>
+                                <p class="text-green-100">دمج أنظمة الطاقة الشمسية مع أنظمة MEP التقليدية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-lg text-green-600 mr-4">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">إعادة التدوير</h4>
+                                <p class="text-green-100">أنظمة معالجة وإعادة استخدام المياه الرمادية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="مبنى أخضر مستدام" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center">
+                    <div class="text-4xl text-[var(--gold)] mb-4">
+                        <i class="fas fa-battery-three-quarters"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">توفير الطاقة</h4>
+                    <p class="text-green-100">حلول تقلل استهلاك الطاقة بنسبة تصل إلى 40%</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center">
+                    <div class="text-4xl text-[var(--gold)] mb-4">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">ترشيد المياه</h4>
+                    <p class="text-green-100">تقنيات متقدمة لتوفير المياه وإعادة استخدامها</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center">
+                    <div class="text-4xl text-[var(--gold)] mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">الجودة البيئية</h4>
+                    <p class="text-green-100">تحسين جودة الهواء الداخلي والراحة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-[var(--primary)] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+                <div>
+                    <span class="text-[var(--gold)] font-medium">تجربتنا السعودية</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">خبرة واسعة في مشاريع المملكة</h2>
+                    <p class="text-blue-100 mb-8">منذ عام 2003، كنا في طليعة الهندسة الكهربائية والميكانيكية، حيث أتممنا مئات المشاريع في جميع أنحاء المملكة مع الحفاظ على أعلى معايير الجودة والسلامة وفقاً للوائح السعودية.</p>
+                    
+                    <div class="space-y-8">
+                        <!-- Timeline Item 1 -->
+                        <div class="relative timeline-item pr-8">
+                            <div class="absolute right-0 top-0 w-6 h-6 rounded-full bg-[var(--gold)] border-4 border-white -mr-3"></div>
+                            <h3 class="text-xl font-semibold">برج المملكة - الرياض</h3>
+                            <span class="text-blue-200 text-sm">2020</span>
+                            <p class="mt-2 text-blue-100">تنفيذ كامل أنظمة الـ MEP لأحد أطول الأبراج في العاصمة الرياض مع حلول مبتكرة للكفاءة الطاقة.</p>
+                        </div>
+                        
+                        <!-- Timeline Item 2 -->
+                        <div class="relative timeline-item pr-8">
+                            <div class="absolute right-0 top-0 w-6 h-6 rounded-full bg-[var(--gold)] border-4 border-white -mr-3"></div>
+                            <h3 class="text-xl font-semibold">مستشفى الملك فيصل التخصصي - جدة</h3>
+                            <span class="text-blue-200 text-sm">2018</span>
+                            <p class="mt-2 text-blue-100">تركيب أنظمة التكييف والتهوية المتطورة وفق معايير المستشفيات السعودية مع أنظمة فلترة هواء متقدمة.</p>
+                        </div>
+                        
+                        <!-- Timeline Item 3 -->
+                        <div class="relative timeline-item pr-8">
+                            <div class="absolute right-0 top-0 w-6 h-6 rounded-full bg-[var(--gold)] border-4 border-white -mr-3"></div>
+                            <h3 class="text-xl font-semibold">مصنع أرامكو - الجبيل</h3>
+                            <span class="text-blue-200 text-sm">2015</span>
+                            <p class="mt-2 text-blue-100">حلول كهرباء صناعية متكاملة مع أنظمة حماية متقدمة للمنشآت البتروكيماوية.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl shadow-2xl">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/880896bd-ab3e-43eb-8cf6-8f0bb163fd22.png" alt="فريق عمل سعودي متعدد الجنسيات يعمل في موقع بناء كبير في مدينة نيوم مع أبراج حديثة في الخلفية" class="rounded-lg w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-[var(--gold)] p-6 rounded-lg shadow-xl w-3/4 text-[var(--primary)]">
+                        <span class="text-4xl font-bold block mb-2">100%</span>
+                        <p class="font-medium">تزامن مع رؤية السعودية 2030 في مشاريعنا</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[var(--gold)] font-medium">مشاريعنا</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-[var(--primary)]">أبرز مشاريعنا في المملكة</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-600">استكشف بعض من أكثر التثبيتات الكهربائية والميكانيكية تحديًا وابتكارًا التي قمنا بها في مختلف مدن السعودية.</p>
+            </div>
+            
+            <div class="grid-gallery">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e5996957-37bd-4c9b-84f7-0c7828c62e73.png" alt="برج سكني حديث في حي المروج بالرياض مع أنظمة تكييف مركزي على السطح" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">برج المروج - الرياض</h3>
+                            <p class="text-white/90">تنفيذ كامل أنظمة الـ MEP لبرج سكني فاخر 40 طابق</p>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-map-marker-alt text-white mr-2"></i>
+                                <span class="text-white/80">الرياض، السعودية</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4 bg-[var(--gold)] text-white px-3 py-1 rounded-md text-sm font-medium">2022</div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3acc6cf-6e53-44b3-811a-fc5c8cc0fffe.png" alt="مستشفى حديث في جدة مع أنظمة تكييف وتهوية متطورة وفق معايير وزارة الصحة السعودية" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">المستشفى السعودي الألماني - جدة</h3>
+                            <p class="text-white/90">تثبيت أنظمة تكييف وتهوية متطورة لمستشفى 300 سرير</p>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-map-marker-alt text-white mr-2"></i>
+                                <span class="text-white/80">جدة، السعودية</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4 bg-[var(--gold)] text-white px-3 py-1 rounded-md text-sm font-medium">2021</div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9dc6f94a-8f1e-4948-9f7c-0122ed0d2906.png" alt="منشأة صناعية ضخمة في الجبيل مع أنظمة كهرباء صناعية متكاملة" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">مصنع سابك - الجبيل</h3>
+                            <p class="text-white/90">حلول كهرباء صناعية متكاملة لمنشأة بتروكيماوية</p>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-map-marker-alt text-white mr-2"></i>
+                                <span class="text-white/80">الجبيل، السعودية</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4 bg-[var(--gold)] text-white px-3 py-1 rounded-md text-sm font-medium">2019</div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/032733d1-6b62-4c0a-a3c1-296208cb624f.png" alt="مركز تسوق فاخر في الخبر مع أنظمة إضاءة مبتكرة وموفرة للطاقة" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">الرياض مول - الخبر</h3>
+                            <p class="text-white/90">أنظمة إضاءة وتحكم ذكية لمركز تجاري ضخم</p>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-map-marker-alt text-white mr-2"></i>
+                                <span class="text-white/80">الخبر، السعودية</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4 bg-[var(--gold)] text-white px-3 py-1 rounded-md text-sm font-medium">2020</div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[var(--primary)] hover:bg-[var(--secondary)] transition duration-300">
+                    عرض جميع المشاريع
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[var(--gold)] font-medium">انضم إلينا</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-[var(--primary)]">فرص وظيفية مميزة</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-600">كن جزءاً من فريقنا المتميز وساهم في بناء مستقبل المملكة وفقاً لرؤية 2030</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-[var(--primary)] mb-6">لماذا تعمل معنا؟</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg text-blue-600 mr-4">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">التطوير المهني</h4>
+                                <p class="text-gray-600">برامج تدريب مستمرة وفرص تطوير المهارات التقنية والإدارية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg text-blue-600 mr-4">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">بيئة عمل محفزة</h4>
+                                <p class="text-gray-600">فريق عمل متعاون وثقافة مؤسسية تشجع على الإبداع والابتكار</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg text-blue-600 mr-4">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">دعم السعودة</h4>
+                                <p class="text-gray-600">التزامنا بتوطين الوظائف وتطوير الكوادر السعودية المتخصصة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="فريق عمل متنوع في مكتب حديث" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-[var(--primary)] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-hard-hat text-white"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">مهندسون</h4>
+                    <p class="text-gray-600 mb-4">مهندسون في تخصصات HVAC، الكهرباء، السباكة، والحماية من الحريق</p>
+                    <a href="#contact" class="text-[var(--primary)] hover:text-[var(--secondary)] font-medium">تقدم الآن</a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-[var(--primary)] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tools text-white"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">فنيون</h4>
+                    <p class="text-gray-600 mb-4">فنيون مهرة في التركيب والصيانة لجميع أنظمة MEP</p>
+                    <a href="#contact" class="text-[var(--primary)] hover:text-[var(--secondary)] font-medium">تقدم الآن</a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-[var(--primary)] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-project-diagram text-white"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">مديرو مشاريع</h4>
+                    <p class="text-gray-600 mb-4">قادة مشاريع ذوو خبرة في إدارة المشاريع الكبيرة والمعقدة</p>
+                    <a href="#contact" class="text-[var(--primary)] hover:text-[var(--secondary)] font-medium">تقدم الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[var(--gold)] font-medium">آراء عملائنا</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-[var(--primary)]">ماذا يقول عملاؤنا عنّا</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-600">شركاء النجاح الذين سعدنا بالتعاون معهم في مختلف أنحاء المملكة</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dcdb09c8-1b81-4319-a57c-7c68d71d7d8d.png" alt="المدير التنفيذي السعودي برأس المال الوطني يرتدي الثوب السعودي" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">أ. محمد العليان</h4>
+                            <p class="text-sm text-gray-500">المدير التنفيذي، تطوير العليان</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"لقد نفذت شركة إلكتروميك مشروعنا المعقد في الوقت المحدد وبجودة فائقة. التنسيق بين الأنظمة الكهربائية والسباكة والتكييف كان لا تشوبه شائعة وفقاً لأعلى معايير الجودة السعودية."</p>
+                    <div class="flex mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9a82c7e1-0a6f-48ba-a993-50e0c0c77dff.png" alt="المدير الهندسي بمستشفى سعودي خاص يرتدي الزي الطبي الأبيض" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">د. خالد الحربي</h4>
+                            <p class="text-sm text-gray-500">المدير الهندسي, المستشفى السعودي الألماني</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"خبرة إلكتروميك في أنظمة التهوية للمستشفيات ممتازة. أنظمة الفلترة المقدمة لمستشفانا تلبي أعلى معايير وزارة الصحة السعودية مع كفاءة طاقة عالية."</p>
+                    <div class="flex mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="
+
+
+0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0536a1d0-9a8f-4c8f-8c77-4414fc6ceca6.png" alt="المدير العام لشركة صناعية سعودية في زي رسمي أثناء تفقده للمصنع" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">م. عبدالله السليمان</h4>
+                            <p class="text-sm text-gray-500">المدير العام, الصناعات البتروكيماوية المتحدة</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"تنفيذ مشروعنا الصناعي مع إلكتروميك كان مثالياً من حيث التخطيط والجودة والالتزام بالمواعيد. نجحوا في توفير حلول كهرباء صناعية متكاملة مع أنظمة حماية متقدمة تلبي متطلبات هيئة تنظيم الكهرباء السعودية."</p>
+                    <div class="flex mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Saudi Cities Coverage Section -->
+    <section class="py-20 bg-[var(--secondary)] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[var(--gold)] font-medium">انتشارنا</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">نعمل في جميع أنحاء المملكة</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-blue-100">فروعنا وتغطيتنا لمختلف المدن والمناطق السعودية تضمن لكم خدمة سريعة وفعالة أينما كنتم</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <i class="fas fa-city text-3xl mb-4 text-[var(--gold)]"></i>
+                    <h3 class="text-xl font-semibold mb-2">الرياض</h3>
+                    <p class="text-white/80">مقرنا الرئيسي يقدم خدمات متكاملة لجميع مشاريع العاصمة</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-building text-3xl mb-4 text-[var(--gold)]"></i>
+                    <h3 class="text-xl font-semibold mb-2">جدة</h3>
+                    <p class="text-white/80">فرعنا يغطي منطقة مكة المكرمة بمهندسين محليين</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-industry text-3xl mb-4 text-[var(--gold)]"></i>
+                    <h3 class="text-xl font-semibold mb-2">الدمام</h3>
+                    <p class="text-white/80">خبراء في المشاريع الصناعية بالمنطقة الشرقية</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-project-diagram text-3xl mb-4 text-[var(--gold)]"></i>
+                    <h3 class="text-xl font-semibold mb-2">نيوم</h3>
+                    <p class="text-white/80">شركاء في مشاريع الرؤية الطموحة شمال المملكة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[var(--primary)] mb-6">تواصل مع فريقنا اليوم</h2>
+                    <p class="text-gray-600 mb-8">يسعدنا تقديم استشارة مجانية لمشروعك القادم أو الإجابة عن أي استفسارات لديك. فريقنا متواجد على مدار الساعة لخدمتك.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-[var(--primary)] p-3 rounded-lg text-white mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-[var(--primary)]">العنوان الرئيسي</h4>
+                                <p class="text-gray-600">حي المروج، الرياض 12345، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-[var(--primary)] p-3 rounded-lg text-white mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-[var(--primary)]">الهاتف</h4>
+                                <p class="text-gray-600">+966 11 234 5678</p>
+                                <p class="text-gray-600">9200 12345 (مجاناً)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-[var(--primary)] p-3 rounded-lg text-white mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-[var(--primary)]">البريد الإلكتروني</h4>
+                                <p class="text-gray-600">info@electromech-sa.com</p>
+                                <p class="text-gray-600">support@electromech-sa.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-lg text-[var(--primary)] mb-4">ساعات العمل</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>الأحد - الخميس: 8 صباحاً - 5 مساءً</li>
+                            <li>الجمعة - السبت: مغلق</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 contact-form">
+                        <h3 class="text-2xl font-bold text-[var(--primary)] mb-6">أرسل لنا رسالة</h3>
+                        
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">اسمك الكامل</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent" placeholder="أدخل اسمك">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">البريد الإلكتروني</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent" placeholder="أدعنوان بريدك الإلكتروني">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">رقم الهاتف</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent" placeholder="05xxxxxxxx">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="city" class="block text-gray-700 font-medium mb-2">المدينة</label>
+                                <select id="city" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent">
+                                    <option value="">اختر المدينة</option>
+                                    <option value="riyadh">الرياض</option>
+                                    <option value="jeddah">جدة</option>
+                                    <option value="dammam">الدمام</option>
+                                    <option value="khobar">الخبر</option>
+                                    <option value="medina">المدينة المنورة</option>
+                                    <option value="other">أخرى</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">نوع الخدمة المطلوبة</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent">
+                                    <option value="">اختر الخدمة</option>
+                                    <option value="hvac">أنظمة التكييف والتهوية</option>
+                                    <option value="electrical">الأنظمة الكهربائية</option>
+                                    <option value="plumbing">أنظمة السباكة</option>
+                                    <option value="fire">أنظمة الحماية من الحريق</option>
+                                    <option value="smart-building">المباني الذكية</option>
+                                    <option value="maintenance">الصيانة والتشغيل</option>
+                                    <option value="consultation">استشارة هندسية</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">رسالتك</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent" placeholder="أدخل تفاصيل طلبك"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-[var(--primary)] text-white px-6 py-3 rounded-md font-medium hover:bg-[var(--secondary)] transition duration-300">
+                                إرسال الرسالة
+                                <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--primary)] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">إلكترو<span class="text-[var(--gold)]">ميك</span></h3>
+                    <p class="text-white/80">شركة رائدة في مجال المقاولات الكهربائية والميكانيكية في المملكة العربية السعودية منذ 2003.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-white hover:text-[var(--gold)]"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-[var(--gold)]"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white hover:text-[var(--gold)]"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-[var(--gold)]"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-white/80 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="#services" class="text-white/80 hover:text-white transition duration-300">خدماتنا</a></li>
+                        <li><a href="#fire-protection" class="text-white/80 hover:text-white transition duration-300">الحماية من الحريق</a></li>
+                        <li><a href="#smart-building" class="text-white/80 hover:text-white transition duration-300">المباني الذكية</a></li>
+                        <li><a href="#sustainability" class="text-white/80 hover:text-white transition duration-300">الاستدامة</a></li>
+                        <li><a href="#experience" class="text-white/80 hover:text-white transition duration-300">خبراتنا</a></li>
+                        <li><a href="#projects" class="text-white/80 hover:text-white transition duration-300">مشاريعنا</a></li>
+                        <li><a href="#careers" class="text-white/80 hover:text-white transition duration-300">الوظائف</a></li>
+                        <li><a href="#contact" class="text-white/80 hover:text-white transition duration-300">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">خدماتنا</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white/80 hover:text-white transition duration-300">أنظمة التكييف والتهوية</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition duration-300">الأنظمة الكهربائية</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition duration-300">أنظمة السباكة</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition duration-300">أنظمة الحماية من الحريق</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition duration-300">المباني الذكية</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition duration-300">الصيانة والتشغيل</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">النشرة البريدية</h4>
+                    <p class="text-white/80 mb-4">اشترك ليصلك كل جديد عن خدماتنا وعروضنا</p>
+                    <form class="flex">
+                        <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-2 rounded-r-md focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-[var(--gold)] text-[var(--primary)] px-4 py-2 rounded-l-md font-medium">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <p class="text-white/60 text-xs mt-2">لن نشارك بريدك مع أي طرف ثالث</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-white/80">&copy; 2023 إلكتروميك. جميع الحقوق محفوظة.</p>
+                </div>
+                <div>
+                    <ul class="flex flex-wrap space-x-6 space-x-reverse">
+                        <li><a href="#" class="text-white/80 hover:text-white text-sm">شروط الاستخدام</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white text-sm">سياسة الخصوصية</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white text-sm">سياسة ملفات تعريف الارتباط</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white text-sm">الإبلاغ عن مشكلة</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+
